@@ -3,81 +3,78 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="">
+
 <body>
 
-<!-- Navigation -->
-<nav class="w3-bar w3-black">
-  <a href="index.html" class="w3-button w3-bar-item">Home</a>
-  <a href="Fun_facts.html" class="w3-button w3-bar-item">Fun Facts</a>
-  <a href="Charles_Darwin_facts.html" class="w3-button w3-bar-item">About Charles Darwin</a>
-  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
-</nav>
+  <!-- Navigation -->
+  <nav class="w3-bar w3-black">
+    <a href="index.html" class="w3-button w3-bar-item">Home</a>
+    <a href="Fun_facts.html" class="w3-button w3-bar-item">Fun Facts</a>
+    <a href="Charles_Darwin_facts.html" class="w3-button w3-bar-item">About Charles Darwin</a>
+    <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+  </nav>
 
-<!-- Slide Show -->
-<section>
-  <img class="mySlides" src="img/Charles_Dawin_book.jpg"             width="400">
+  <!-- Slide Show -->
+  <section>
+    <img class="mySlides" src="img/Charles_Dawin_book.jpg" width="400">
 
-  <img class="mySlides" src="img/origin-of-species-thumb.jpg"width="400">
+    <img class="mySlides" src="img/origin-of-species-thumb.jpg" width="400">
 
-  <img class="mySlides" src="img/Origin-Spines.jpg"width="400">
+    <img class="mySlides" src="img/Origin-Spines.jpg" width="400">
 
-</section>
+  </section>
 
-<!-- Band Description -->
-<section class="w3-container w3-center w3-content" style="max-width:600px">
-  <h2 class="w3-wide">On the Origins of Species</h2>
-  <p class="w3-opacity"><i>On the Origins Of Species</i></p>
-  <p class="w3-justify">This book, written by Charles Darwin has been sold all over the world.
-      It tells you all about Charles Darwin's theories, evolution and inheritance.
-  </p>
-</section>
-
-<!-- Band Members -->
-<section class="w3-row-padding w3-center w3-light-grey">
-  <article class="w3-third">
-    <p>The Origin Of Species
+  <!-- Band Description -->
+  <section class="w3-container w3-center w3-content" style="max-width:600px">
+    <h2 class="w3-wide">On the Origins of Species</h2>
+    <p class="w3-opacity">
+      <i>On the Origins Of Species</i>
     </p>
-    <img 
-    src="img/Charles_Dawin_book.jpg"
-    alt
-   height="500" >
- 
-    <p>On the Origin of Species
-         is the famous book by Charles Darwin. 
-         It gave evidence for evolution, and 
-         suggested what had caused evolution to happen.
-         it provided a great deal of evidence that evolution has taken place.</p>
-  </article>
-  <article class="w3-third">
-    <p>Paul</p>
+    <p class="w3-justify">This book, written by Charles Darwin has been sold all over the world. It tells you all about Charles Darwin's theories,
+      evolution and inheritance.
+    </p>
+  </section>
 
-    <p>Paul is the prettiest.</p>
-  </article>
-  <article class="w3-third">
-    <p>Ringo</p>
+  <!-- Band Members -->
+  <section class="w3-row-padding w3-center w3-light-grey">
+    <article class="w3-third">
+      <p>The Origin Of Species
+      </p>
+      <img src="img/Charles_Dawin_book.jpg" alt height="500">
 
-    <p>Ringo is the funniest.</p>
-  </article>
-</section>
+      <p>On the Origin of Species is the famous book by Charles Darwin. It gave evidence for evolution, and suggested what had
+        caused evolution to happen. it provided a great deal of evidence that evolution has taken place.</p>
+    </article>
+    <article class="w3-third">
+      <p>Paul</p>
 
-<script>
-// Automatic Slideshow - change image every 3 seconds
-var myIndex = 0;
-carousel();
+      <p>Paul is the prettiest.</p>
+    </article>
+    <article class="w3-third">
+      <p>Ringo</p>
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
+      <p>Ringo is the funniest.</p>
+    </article>
+  </section>
+
+  <script>
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 3000);
     }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 3000);
-}
-</script>
+  </script>
 
 </body>
-</html>
 
+</html>
